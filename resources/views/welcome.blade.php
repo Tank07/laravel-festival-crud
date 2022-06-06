@@ -26,7 +26,7 @@
   </nav>
   <div class="text-center mt-5 ">
     <h1 class="py-4">Benvenuti alla pagina del Festival</h1>
-    <a href="" class="btn btn-primary fs-3">Vai ai partecipanti</a>
+    <a href="" class="btn btn-primary fs-3">Vai ai partecipanti!!</a>
   </div>
  
 @endsection
