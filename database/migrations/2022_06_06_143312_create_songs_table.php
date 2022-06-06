@@ -20,7 +20,7 @@ class CreateSongsTable extends Migration
             $table->string('author');
             $table->string('genre');
             $table->year('year');
-            $table->enum('status', [ 'healty','moribound','died']);
+            $table->enum('status', [ 'healty','moribound','died']); 
             $table->timestamps();
         });
     }
