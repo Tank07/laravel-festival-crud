@@ -3,26 +3,26 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col" class="text-capitalize">copertina</th>
-            <th scope="col" class="text-capitalize">autore</th>
-            <th scope="col" class="text-capitalize">titolo</th>
-            <th scope="col" class="text-capitalize">genere</th>
-            <th scope="col" class="text-capitalize">anno di uscita</th>
-            <th scope="col" class="text-capitalize">stato di salute</th>
+            <th scope="col" class="text-capitalize fs-3 text-center">copertina</th>
+            <th scope="col" class="text-capitalize fs-3 text-center">autore</th>
+            <th scope="col" class="text-capitalize fs-3 text-center">titolo</th>
+            <th scope="col" class="text-capitalize fs-3 text-center">genere</th>
+            <th scope="col" class="text-capitalize fs-3 text-center">anno di uscita</th>
+            <th scope="col" class="text-capitalize fs-3 text-center">stato di salute</th>
         </tr>
     </thead>
     <tbody>
         @forelse ($songs as $song )
         <tr>
-            <td>
-                <img src="{{ $song->poster }}" alt="" width="100px">
+            <td class="text-center">
+                <img src="{{ $song->poster }}" alt="" width="150px" >
             </td>
-            <td>{{ $song->title }}</td>
-            <td>{{ $song->author }}</td>
-            <td>{{ $song->genre }}</td>
-            <td>{{ $song->year }}</td>
-            <td>{{ $song->status }}</td>
-
+            <td class="align-middle fs-5 text-center">{{ $song->title }}</td>
+            <td class="align-middle fs-5 text-center">{{ $song->author }}</td>
+            <td class="align-middle fs-5 text-center">{{ $song->genre }}</td>
+            <td class="align-middle fs-5 text-center">{{ $song->year }}</td>
+            <td class="align-middle fs-5 text-center">{{ $song->status }}</td>
+            <td class="align-middle fs-5 text-center"><a href="{{route('songs.show', $song->id)}}" class="text-capitalize btn btn-primary">vai alle info</a></td>
         </tr>
         @empty
 
