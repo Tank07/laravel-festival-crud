@@ -1,6 +1,6 @@
 @extends('layout.layout')
 @section('cont')
-<div class="contaner ">
+<div class="contaner text-center">
     <div class="row justify-content-center p-5">
         <div class="card py-3 text-center" style="max-width: 540px;">
             <div class="row g-0">
@@ -20,8 +20,9 @@
                 </div>
             </div>
         </div>
+        
     </div>
-
+    <a href="{{route('songs.index')}}" class="btn btn-primary fs-3">Torna ai partecipanti</a>
 </div>
 
 @endsection
